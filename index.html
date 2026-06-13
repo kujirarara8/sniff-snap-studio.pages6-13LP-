@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sniff & Snap Photo Studio｜大阪・浪速区のペット専門フォトスタジオ</title>
+<meta name="description" content="大阪・浪速区のペット専門フォトスタジオ「Sniff & Snap」。犬・猫・うさぎ・小動物もOK。衣装・おもちゃ・バースデーフォトで、その子だけの特別な一枚を。45分¥25000〜。">
+<meta name="format-detection" content="telephone=no">
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sniff & Snap Photo Studio｜大阪のペット専門フォトスタジオ">
+<meta property="og:description" content="「今この瞬間」を、ずっと残したい一枚に。大阪・浪速区のペット専門フォトスタジオ。犬・猫・うさぎもOK。">
+<meta property="og:image" content="https://sniff-snap-studio.pages.dev/images/img_01.jpg">
+<meta property="og:url" content="https://sniff-snap-studio.pages.dev/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- 構造化データ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sniff & Snap Photo Studio",
+  "description": "大阪・浪速区のペット専門フォトスタジオ",
+  "image": "https://sniff-snap-studio.pages.dev/images/img_01.jpg",
+  "telephone": "090-8799-4021",
+  "email": "info@0love-inc.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "大阪市浪速区",
+    "addressRegion": "大阪府",
+    "addressCountry": "JP"
+  },
+  "priceRange": "¥25000〜¥35000"
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange: #ff6b35;
+  --pink: #ff4d9e;
+  --yellow: #ffd60a;
+  --teal: #00c9a7;
+  --blue: #4cc9f0;
+  --purple: #7b2d8b;
+  --green: #06d6a0;
+  --cream: #fffbf0;
+  --dark: #1a1a2e;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--cream); font-family:'Nunito',sans-serif; overflow-x:hidden; color:var(--dark); }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff4d9e 40%, #7b2d8b 100%);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative; overflow: hidden; text-align: center; padding: 40px 24px;
+}
+.hero-blob {
+  position: absolute; border-radius: 50%; opacity: 0.2; animation: float 6s ease-in-out infinite;
+}
+.hero-blob:nth-child(1) { width:300px;height:300px;background:#ffd60a;top:-80px;left:-80px;animation-delay:0s; }
+.hero-blob:nth-child(2) { width:200px;height:200px;background:#4cc9f0;bottom:-40px;right:-40px;animation-delay:2s; }
+.hero-blob:nth-child(3) { width:150px;height:150px;background:#06d6a0;top:50%;left:5%;animation-delay:4s; }
+@keyframes float {
+  0%,100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+.hero-badge {
+  background: var(--yellow); color: var(--dark);
+  font-family:'Fredoka One',cursive; font-size:13px; letter-spacing:0.1em;
+  padding: 6px 20px; border-radius:99px; margin-bottom:24px;
+  display:inline-block;
+  animation: bounceIn 0.8s ease forwards; opacity:0;
+}
+@keyframes bounceIn {
+  0% { opacity:0; transform:scale(0.5); }
+  70% { transform:scale(1.1); }
+  100% { opacity:1; transform:scale(1); }
+}
+.hero-logo {
+  font-family:'Fredoka One',cursive;
+  font-size: clamp(52px,13vw,96px);
+  color: #fff; line-height:1;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+  margin-bottom:8px;
+  animation: fadeUp 0.8s 0.3s ease forwards; opacity:0;
+}
+.hero-logo span { color: var(--yellow); }
+.hero-sub {
+  font-size:13px; letter-spacing:0.3em; color:rgba(255,255,255,0.7);
+  margin-bottom:28px;
+  animation: fadeUp 0.8s 0.4s ease forwards; opacity:0;
+}
+.hero-tagline {
+  font-size:clamp(16px,4vw,22px); color:#fff; font-weight:700;
+  line-height:1.9; margin-bottom:24px;
+  animation: fadeUp 0.8s 0.5s ease forwards; opacity:0;
+}
+.hero-points {
+  display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+  margin-bottom:40px; max-width:560px;
+  animation: fadeUp 0.8s 0.55s ease forwards; opacity:0;
+}
+.hero-points span {
+  background:rgba(255,255,255,0.15); color:#fff;
+  font-size:12px; font-weight:700; padding:7px 14px; border-radius:99px;
+  backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.2);
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(24px); }
+  to { opacity:1; transform:translateY(0); }
+}
+.hero-photos {
+  display:flex; gap:16px; margin-bottom:48px; justify-content:center; flex-wrap:wrap;
+  animation: fadeUp 0.8s 0.6s ease forwards; opacity:0;
+}
+.hero-photo {
+  width: clamp(90px,18vw,130px);
+  height: clamp(90px,18vw,130px);
+  border-radius:50%; object-fit:cover;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.hero-photo:hover { transform:scale(1.08) rotate(3deg); }
+.hero-photo:nth-child(2) { margin-top:20px; border-color:var(--yellow); }
+.hero-photo:nth-child(3) { border-color:var(--teal); }
+.hero-cta {
+  display:inline-block; padding:18px 52px;
+  background:var(--yellow); color:var(--dark);
+  font-family:'Fredoka One',cursive; font-size:18px; letter-spacing:0.1em;
+  border-radius:99px; text-decoration:none;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+  transition:all 0.2s;
+  animation: fadeUp 0.8s 0.8s ease forwards; opacity:0;
+}
+.hero-cta:hover { transform:translateY(-3px); box-shadow:0 10px 0 rgba(0,0,0,0.15); }
+.hero-cta:active { transform:translateY(2px); box-shadow:0 2px 0 rgba(0,0,0,0.15); }
+.hero-cta-note {
+  margin-top:14px; font-size:12px; color:rgba(255,255,255,0.85); font-weight:600;
+  animation: fadeUp 0.8s 0.9s ease forwards; opacity:0;
+}
+.hero-scroll {
+  position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+  color:rgba(255,255,255,0.6); font-size:11px; letter-spacing:0.3em;
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+}
+.hero-scroll-dot {
+  width:6px;height:6px; background:rgba(255,255,255,0.6);
+  border-radius:50%; animation:scrollBounce 1.5s infinite;
+}
+@keyframes scrollBounce {
+  0%,100% { transform:translateY(0); opacity:0.6; }
+  50% { transform:translateY(8px); opacity:1; }
+}
+
+/* ===== SHARED ===== */
+section { padding:90px 24px; }
+.section-inner { max-width:900px; margin:0 auto; }
+.chip {
+  display:inline-block; padding:6px 18px; border-radius:99px;
+  font-size:12px; font-weight:800; letter-spacing:0.15em;
+  text-transform:uppercase; margin-bottom:16px;
+}
+.chip-orange { background:#fff3ee; color:var(--orange); }
+.chip-pink { background:#fff0f7; color:var(--pink); }
+.chip-teal { background:#e8fdf8; color:var(--teal); }
+.chip-blue { background:#e8f8ff; color:var(--blue); }
+.chip-purple { background:#f5e8f9; color:var(--purple); }
+.section-title {
+  font-family:'Fredoka One',cursive;
+  font-size:clamp(28px,6vw,44px); line-height:1.2; margin-bottom:12px;
+}
+.section-lead { font-size:16px; color:#666; line-height:1.9; margin-bottom:40px; }
+.reveal { opacity:1; transform:translateY(0); transition:opacity 0.7s,transform 0.7s; }
+.reveal.animate { opacity:0; transform:translateY(20px); }
+.reveal.animate.visible { opacity:1; transform:translateY(0); }
+
+/* ===== GALLERY ===== */
+.gallery { background: linear-gradient(180deg, #fff5fe 0%, #fff8f0 100%); }
+.gallery-grid {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:16px; margin-top:40px;
+}
+.gallery-item {
+  border-radius:20px; overflow:hidden;
+  aspect-ratio:1; position:relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition:transform 0.3s;
+  cursor:pointer;
+}
+.gallery-item:hover { transform:scale(1.03) rotate(-1deg); }
+.gallery-item:nth-child(1) { grid-column:span 2; aspect-ratio:2/1; }
+.gallery-item img { width:100%;height:100%;object-fit:cover; }
+.gallery-item .tag {
+  position:absolute; top:12px; left:12px;
+  background:rgba(255,255,255,0.9); color:var(--dark);
+  font-size:11px; font-weight:700; padding:4px 10px; border-radius:99px;
+}
+
+/* ===== PLAN ===== */
+.plan { background: #f5f0eb; }
+.plan-cards-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:40px;
+}
+.plan-card {
+  background: #fff;
+  border-radius:16px; padding:32px 24px; margin-top:0;
+  position:relative; overflow:hidden;
+  border:2px solid #e8e4df;
+  display:flex; flex-direction:column;
+  transition:transform 0.2s, box-shadow 0.2s;
+  box-shadow:0 4px 16px rgba(0,0,0,0.06);
+}
+.plan-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,0.12); }
+.plan-card.featured {
+  border-color:var(--orange);
+  box-shadow:0 0 0 3px var(--orange), 0 20px 48px rgba(255,107,53,0.28);
+  transform:scale(1.04);
+  z-index:2;
+}
+.plan-card::before {
+  content:'';position:absolute;
+  width:100%;height:6px;
+  background:#e0dad2;
+  top:0;left:0;right:0;
+  border-radius:0;
+}
+.plan-badge {
+  display:inline-block; padding:6px 16px;
+  background:linear-gradient(135deg,var(--orange),var(--pink)); color:#fff;
+  border-radius:99px; font-size:12px; font-weight:800;
+  letter-spacing:0.04em; margin-bottom:12px; width:fit-content;
+  box-shadow:0 4px 12px rgba(255,107,53,0.3);
+}
+.plan-card.featured:hover { transform:scale(1.04) translateY(-4px); }
+.plan-card.featured::before { background:linear-gradient(90deg,var(--orange),var(--pink)); height:8px; }
+@media(max-width:700px){
+  .plan-card.featured { transform:scale(1); order:-1; }
+  .plan-card.featured:hover { transform:translateY(-4px); }
+}
+/* お得感の数値表示 */
+.plan-unit {
+  font-size:12px; color:#999; margin-top:10px;
+  padding-top:10px; border-top:1px dashed #e0dad2;
+}
+.plan-unit strong { color:#666; font-size:15px; }
+.featured-unit { color:#c47a5a; }
+.featured-unit strong { color:var(--orange); font-size:17px; }
+.unit-best {
+  display:inline-block; margin-left:6px; vertical-align:middle;
+  background:var(--orange); color:#fff; font-size:10px; font-weight:800;
+  padding:2px 8px; border-radius:99px;
+}
+.plan-highlight {
+  color:var(--orange) !important; font-weight:800;
+}
+.plan-highlight::before { color:var(--orange) !important; }
+.plan-save {
+  display:inline-block; background:linear-gradient(135deg,#fff0e8,#ffe8f2);
+  color:#d6492e; font-size:13px; font-weight:800;
+  padding:6px 14px; border-radius:99px; margin:6px 0 14px;
+  border:1px solid rgba(255,107,53,0.25);
+}
+/* 特別プラン（バースデー）別枠 */
+.special-plan {
+  margin-top:48px; position:relative;
+  background:linear-gradient(135deg,#fff8f0,#fff0f7);
+  border:2px dashed var(--pink); border-radius:24px;
+  padding:32px 28px;
+}
+.special-badge {
+  position:absolute; top:-14px; left:28px;
+  background:linear-gradient(135deg,var(--pink),var(--purple)); color:#fff;
+  font-size:13px; font-weight:800; letter-spacing:0.05em;
+  padding:6px 18px; border-radius:99px;
+  box-shadow:0 4px 12px rgba(255,77,158,0.3);
+}
+.special-inner {
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  flex-wrap:wrap; margin-top:8px;
+}
+.special-left { flex:1; min-width:240px; }
+.special-name {
+  font-family:'Fredoka One',cursive; font-size:24px; color:#3a3a3a; margin-bottom:8px;
+}
+.special-desc { font-size:14px; color:#777; line-height:1.8; margin-bottom:16px; }
+.special-chips { display:flex; flex-wrap:wrap; gap:6px; }
+.special-right { text-align:right; flex-shrink:0; }
+.special-right .plan-unit { border-top:none; padding-top:6px; }
+@media(max-width:700px){
+  .special-inner { flex-direction:column; align-items:flex-start; }
+  .special-right { text-align:left; width:100%; }
+}
+
+/* ===== FAQ ===== */
+.plan-name {
+  font-family:'Fredoka One',cursive; font-size:22px; color:#3a3a3a; margin-bottom:14px;
+}
+.plan-chips { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; }
+.plan-chip {
+  padding:4px 10px; background:#f0ecf7;
+  border-radius:99px; font-size:11px; color:#666;
+}
+.plan-divider { border:none; border-top:1px solid #e8e4df; margin:16px 0; }
+.plan-features-list { list-style:none; padding:0; margin:0 0 20px; flex:1; }
+.plan-features-list li {
+  font-size:13px; color:#555; padding:5px 0;
+  display:flex; align-items:flex-start; gap:8px;
+}
+.plan-features-list li::before { content:'●'; color:#b8c5d0; font-size:8px; margin-top:5px; flex-shrink:0; }
+.plan-price {
+  font-family:'Fredoka One',cursive;
+  font-size:clamp(32px,5vw,44px); color:#3a3a3a; line-height:1; margin-top:auto;
+}
+.plan-price .yen { font-size:22px; color:#888; }
+.plan-tax { font-size:12px; color:#aaa; margin-top:4px; }
+.plan-features { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:36px; }
+.plan-feature {
+  background:#f5f0eb; border-radius:16px;
+  padding:20px 12px; text-align:center;
+}
+.plan-feature-num {
+  font-family:'Fredoka One',cursive; font-size:36px; color:#b8c5d0; line-height:1;
+}
+.plan-feature-unit { font-size:13px; color:#b8c5d0; }
+.plan-feature-label { font-size:11px; color:#aaa; margin-top:6px; }
+.plan-tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px; }
+.plan-tag {
+  padding:6px 14px; background:#f5f0eb;
+  border-radius:99px; font-size:12px; color:#777;
+}
+.plan-note {
+  font-size:12px; color:#aaa; line-height:2;
+  border-top:1px solid #e8e4df; padding-top:20px;
+}
+/* Option grid */
+.option-grid {
+  display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:32px;
+}
+.option-card {
+  background:#fff; border-radius:16px;
+  padding:20px; border:1px solid #e8e4df;
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+.option-card-title {
+  font-size:13px; font-weight:800; letter-spacing:0.05em;
+  color:#3a3a3a; margin-bottom:10px;
+}
+.option-card-items { font-size:14px; color:#555; line-height:2.2; }
+.option-card-items strong { color:#3a3a3a; font-size:18px; }
+/* Menu section */
+
+
+
+
+
+
+
+.menu-note { font-size:11px; color:rgba(0,0,0,0.3); margin-top:4px; }
+
+/* ===== FLOW ===== */
+.flow { background:linear-gradient(180deg,#fff8f0 0%,#f0fff9 100%); }
+.flow-steps { margin-top:40px; display:flex; flex-direction:column; gap:0; }
+.flow-step {
+  display:grid; grid-template-columns:72px 1fr;
+  gap:20px; padding:28px 0;
+  border-bottom:2px dashed rgba(0,0,0,0.08);
+}
+.flow-step:last-child { border-bottom:none; }
+.flow-num-wrap {
+  width:60px;height:60px; border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fredoka One',cursive; font-size:24px; color:#fff;
+  flex-shrink:0;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+.flow-num-wrap:nth-child(1) { background:linear-gradient(135deg,#ff6b35,#ff4d9e); }
+.flow-step:nth-child(1) .flow-num-wrap { background:linear-gradient(135deg,#ff6b35,#ff4d9e); }
+.flow-step:nth-child(2) .flow-num-wrap { background:linear-gradient(135deg,#ffd60a,#ff6b35); }
+.flow-step:nth-child(3) .flow-num-wrap { background:linear-gradient(135deg,#00c9a7,#4cc9f0); }
+.flow-step:nth-child(4) .flow-num-wrap { background:linear-gradient(135deg,#7b2d8b,#ff4d9e); }
+.flow-step:nth-child(5) .flow-num-wrap { background:linear-gradient(135deg,#00bfa6,#7b2d8b); }
+.flow-content h3 { font-family:'Fredoka One',cursive; font-size:20px; margin-bottom:8px; color:var(--dark); }
+.flow-content p { font-size:14px; line-height:1.9; color:#666; }
+.flow-alert {
+  margin-top:28px; padding:20px 24px;
+  background:linear-gradient(135deg,#fff0f5,#fff8e8);
+  border-radius:16px; border-left:4px solid var(--pink);
+  font-size:14px; line-height:2; color:#555;
+}
+
+/* ===== VOICE ===== */
+.voice { background:#fff; }
+.voice-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:40px; }
+.voice-card {
+  background:linear-gradient(135deg,#fff5fe,#fff8f0);
+  border-radius:20px; padding:28px;
+  border:2px solid transparent;
+  background-clip:padding-box;
+  position:relative;
+  transition:transform 0.3s;
+}
+.voice-card:hover { transform:translateY(-4px); }
+.voice-quote {
+  font-family:'Fredoka One',cursive; font-size:56px;
+  color:var(--pink); opacity:0.2; line-height:1;
+  position:absolute; top:8px; left:16px;
+}
+.voice-text { font-size:14px; line-height:2; color:#555; margin-bottom:16px; position:relative; }
+.voice-meta { display:flex; align-items:center; gap:10px; }
+.voice-icon {
+  width:40px;height:40px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:20px;
+}
+.voice-icon.v1 { background:linear-gradient(135deg,#ff6b35,#ff4d9e); }
+.voice-icon.v2 { background:linear-gradient(135deg,#4cc9f0,#00c9a7); }
+.voice-icon.v3 { background:linear-gradient(135deg,#ffd60a,#ff6b35); }
+.voice-icon.v4 { background:linear-gradient(135deg,#7b2d8b,#ff4d9e); }
+.voice-name { font-size:12px; color:#999; font-weight:700; }
+.voice-stars { color:var(--orange); font-size:13px; }
+
+/* ===== BOOKING ===== */
+.booking {
+  background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#0f3460 100%);
+  position:relative; overflow:hidden;
+}
+.booking::before {
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%,rgba(255,77,158,0.15),transparent 50%),
+             radial-gradient(circle at 20% 80%,rgba(76,201,240,0.1),transparent 50%);
+}
+.booking .section-title { color:#fff; }
+.booking-wrapper {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:36px; align-items:start; position:relative;
+}
+
+/* Calendar */
+.cal-box {
+  background:rgba(255,255,255,0.05);
+  border-radius:20px; padding:28px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+.cal-header { display:flex;align-items:center;justify-content:space-between;margin-bottom:20px; }
+.cal-month { font-family:'Fredoka One',cursive; font-size:20px; color:#fff; }
+.cal-nav {
+  width:36px;height:36px; border-radius:50%;
+  background:rgba(255,255,255,0.08); border:none;
+  color:#fff; cursor:pointer; font-size:16px;
+  transition:background 0.2s;
+  display:flex;align-items:center;justify-content:center;
+}
+.cal-nav:hover { background:rgba(255,107,53,0.3); }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.cal-dow { text-align:center;font-size:10px;font-weight:700;color:rgba(255,255,255,0.3);padding:6px 0;margin-bottom:2px; }
+.cal-day {
+  aspect-ratio:1; display:flex;align-items:center;justify-content:center;
+  font-size:13px; border-radius:10px; cursor:default;
+  color:rgba(255,255,255,0.15); font-weight:600;
+}
+.cal-day.available {
+  color:#fff; cursor:pointer;
+  background:rgba(255,255,255,0.06);
+  transition:all 0.2s;
+}
+.cal-day.available:hover { background:rgba(255,107,53,0.3); color:#fff; }
+.cal-day.selected { background:linear-gradient(135deg,var(--orange),var(--pink)) !important; color:#fff !important; box-shadow:0 4px 12px rgba(255,107,53,0.4); }
+.cal-day.past { color:rgba(255,255,255,0.06); }
+.cal-day.empty { visibility:hidden; }
+
+.time-box { margin-top:20px; display:none; }
+.time-box.show { display:block; }
+.time-label { font-size:11px;font-weight:800;letter-spacing:0.2em;color:var(--teal);margin-bottom:10px; }
+.time-slots { display:flex;flex-wrap:wrap;gap:8px; }
+.time-slot {
+  padding:8px 18px; border-radius:99px;
+  background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12);
+  color:#fff; font-size:13px;font-weight:700; cursor:pointer;
+  transition:all 0.2s;
+}
+.time-slot:hover { background:rgba(0,201,167,0.2); border-color:var(--teal); }
+.time-slot.selected { background:linear-gradient(135deg,var(--teal),var(--blue)); border-color:transparent; box-shadow:0 4px 12px rgba(0,201,167,0.3); }
+.time-slot.full { color:rgba(255,255,255,0.2); border-color:rgba(255,255,255,0.05); cursor:not-allowed; text-decoration:line-through; }
+.selected-summary {
+  display:none; margin-top:16px; padding:14px 16px;
+  background:rgba(255,214,10,0.1); border-radius:12px;
+  border-left:3px solid var(--yellow);
+  font-size:13px; color:rgba(255,255,255,0.8);
+}
+.selected-summary.show { display:block; }
+
+/* Form */
+.form-box {
+  background:rgba(255,255,255,0.05);
+  border-radius:20px; padding:28px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+.form-title { font-family:'Fredoka One',cursive; font-size:20px; color:#fff; margin-bottom:24px; }
+.form-group { margin-bottom:16px; }
+.form-label { display:block; font-size:11px;font-weight:800;letter-spacing:0.15em;color:rgba(255,255,255,0.4);margin-bottom:6px;text-transform:uppercase; }
+.form-required { color:var(--pink); margin-left:3px; }
+.form-input,.form-select,.form-textarea {
+  width:100%; background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.12); border-radius:12px;
+  color:#fff; padding:11px 14px;
+  font-family:'Nunito',sans-serif; font-size:14px; outline:none;
+  transition:border-color 0.2s; -webkit-appearance:none;
+}
+.form-input:focus,.form-select:focus,.form-textarea:focus { border-color:var(--teal); background:rgba(0,201,167,0.05); }
+.form-input::placeholder,.form-textarea::placeholder { color:rgba(255,255,255,0.2); }
+.form-select option { background:#1a1a2e; color:#fff; }
+.form-textarea { resize:vertical; min-height:80px; }
+.form-note { font-size:11px; color:rgba(255,255,255,0.25); margin-top:4px; }
+.form-check-group { display:flex;align-items:flex-start;gap:10px;margin-top:6px; }
+.form-check { accent-color:var(--orange); width:16px;height:16px;flex-shrink:0;margin-top:3px;cursor:pointer; }
+.form-check-label { font-size:12px; color:rgba(255,255,255,0.4); line-height:1.8; }
+.form-submit {
+  width:100%; padding:16px;
+  background:linear-gradient(135deg,var(--orange),var(--pink));
+  border:none; border-radius:12px; color:#fff;
+  font-family:'Fredoka One',cursive; font-size:17px; letter-spacing:0.05em;
+  cursor:pointer; transition:all 0.2s; margin-top:8px;
+  box-shadow:0 4px 16px rgba(255,107,53,0.3);
+}
+.form-submit:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,107,53,0.4); }
+.form-submit:disabled { background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.3); box-shadow:none; transform:none; cursor:not-allowed; }
+.line-notice {
+  margin-top:16px; padding:14px 16px;
+  background:rgba(0,195,0,0.08); border-radius:12px;
+  border:1px solid rgba(0,195,0,0.2);
+  font-size:12px; line-height:1.9; color:rgba(255,255,255,0.5);
+}
+.line-notice strong { color:#4cd964; }
+.form-success { display:none; text-align:center; padding:48px 24px; }
+.form-success.show { display:block; }
+.form-success-icon { font-size:56px; margin-bottom:16px; }
+.form-success h3 { font-family:'Fredoka One',cursive; font-size:28px; color:#fff; margin-bottom:12px; }
+.form-success p { font-size:14px; color:rgba(255,255,255,0.6); line-height:2; }
+
+/* Cancel */
+.cancel-block {
+  margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr);
+  gap:16px; position:relative;
+}
+.cancel-item {
+  background:rgba(255,255,255,0.05); border-radius:16px;
+  padding:24px 16px; text-align:center;
+  border:1px solid rgba(255,255,255,0.06);
+}
+.cancel-timing { font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:8px;font-weight:700; }
+.cancel-fee { font-family:'Fredoka One',cursive; font-size:32px; color:#fff; }
+.cancel-fee.free { color:var(--teal); }
+.cancel-fee.half { color:var(--yellow); }
+.cancel-fee.full { color:var(--pink); }
+.cancel-title { font-size:11px;letter-spacing:0.3em;color:rgba(255,255,255,0.25);text-align:center;margin-bottom:16px;text-transform:uppercase; }
+
+/* ===== FOOTER ===== */
+footer {
+  background:var(--dark); padding:56px 24px; text-align:center;
+}
+.footer-logo { font-family:'Fredoka One',cursive; font-size:28px; color:#fff; margin-bottom:8px; }
+.footer-logo span { color:var(--yellow); }
+.footer-info { font-size:13px; color:rgba(255,255,255,0.3); line-height:2.2; }
+.footer-copy { margin-top:32px; font-size:11px; color:rgba(255,255,255,0.1); }
+
+/* ===== RESPONSIVE ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-badge, .hero-logo, .hero-sub, .hero-tagline,
+  .hero-points, .hero-photos, .hero-cta { opacity:1 !important; }
+}
+@media (max-width:700px) {
+  section { padding:48px 16px; }
+  .booking-wrapper,.voice-grid { grid-template-columns:1fr; }
+  .gallery-grid { grid-template-columns:repeat(2,1fr); margin-top:28px; }
+  .gallery-item:nth-child(1) { grid-column:span 1; aspect-ratio:1; }
+  .plan-features { gap:10px; }
+  .plan-card { padding:28px 20px; }
+  .plan-cards-grid { grid-template-columns:1fr; gap:16px; }
+  .option-grid { grid-template-columns:1fr; }
+  
+  .cancel-block { grid-template-columns:repeat(3,1fr); gap:10px; }
+  .hero-photos { gap:10px; }
+}
+
+/* ===== MENU CARDS (image style) ===== */
+.menu-section { background:#f5f0eb; padding:80px 0; }
+.menu-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+.menu-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.menu-card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+.menu-card-body {
+  padding: 16px;
+  text-align: center;
+}
+.menu-card-en {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #3a3228;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu-card-ja {
+  font-size: 12px;
+  color: rgba(0,0,0,0.45);
+  margin-top: 2px;
+}
+.menu-card-price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c47a5a;
+}
+.menu-card-price.free {
+  color: #7ab5a0;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+.menu-card-badge {
+  display: inline-block;
+  font-size: 11px;
+  background: #f5f0eb;
+  color: #888;
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin-top: 4px;
+}
+@media(max-width:700px){
+  .menu-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .menu-card-en { font-size: 13px; }
+  .menu-card-body { padding: 12px 10px; }
+}
+
+/* ===== 社会的証明バー ===== */
+.proof-bar {
+  background:linear-gradient(135deg,#fff8f0,#fff0f7);
+  border-bottom:1px solid rgba(255,107,53,0.12);
+  padding:16px 20px;
+}
+.proof-bar-inner {
+  max-width:1000px; margin:0 auto;
+  display:flex; align-items:center; justify-content:center;
+  flex-wrap:wrap; gap:10px 18px;
+}
+.proof-item {
+  font-size:13px; font-weight:700; color:#9a6a52; white-space:nowrap;
+}
+.proof-divider {
+  width:1px; height:14px; background:rgba(255,107,53,0.25);
+}
+@media(max-width:700px){
+  .proof-bar { padding:14px 16px; }
+  .proof-item { font-size:12px; white-space:normal; text-align:center; }
+  .proof-divider { display:none; }
+  .proof-bar-inner { flex-direction:column; gap:8px; }
+}
+
+/* ===== 安心の約束 ===== */
+.promise { background:#fff; }
+.promise-grid {
+  margin-top:44px; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+}
+.promise-card {
+  background:linear-gradient(180deg,#fffdfa,#fff6ee);
+  border:1px solid #f3e9de; border-radius:20px;
+  padding:32px 26px; box-shadow:0 4px 16px rgba(0,0,0,0.04);
+}
+.promise-icon { font-size:36px; margin-bottom:14px; }
+.promise-title {
+  font-size:18px; font-weight:800; color:#3a3a3a;
+  margin-bottom:12px; line-height:1.5;
+}
+.promise-text { font-size:14px; line-height:2; color:#6a6a6a; }
+@media(max-width:700px){
+  .promise-grid { grid-template-columns:1fr; gap:16px; }
+  .promise-card { padding:26px 22px; }
+}
+
+/* ===== 平日価格・土日補足・平日限定 ===== */
+.price-label {
+  font-size:11px; font-weight:700; color:#999; margin-bottom:2px;
+}
+.plan-weekend {
+  font-size:12px; color:#888; margin-top:6px;
+}
+.plan-weekend strong { color:#666; }
+.weekday-only {
+  display:inline-block; background:#eef4ff; color:#3a78c2;
+  font-size:11px; font-weight:800; padding:3px 10px; border-radius:99px;
+  margin-bottom:10px;
+}
+.special-weekend { font-size:12px; color:#888; margin-top:4px; }
+
+/* ===== FAQ ===== */
+.faq-list { margin-top:40px; display:flex; flex-direction:column; gap:12px; }
+.faq-item {
+  background:#fff; border-radius:16px; border:1px solid #f0e8de;
+  box-shadow:0 2px 10px rgba(0,0,0,0.04); overflow:hidden;
+}
+.faq-item summary {
+  list-style:none; cursor:pointer; padding:20px 24px;
+  font-size:15px; font-weight:700; color:#3a3a3a;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-item summary::after {
+  content:'＋'; color:var(--orange); font-size:20px; flex-shrink:0;
+  transition:transform 0.25s;
+}
+.faq-item[open] summary::after { transform:rotate(45deg); }
+.faq-item p {
+  padding:0 24px 20px; font-size:14px; line-height:1.9; color:#666;
+}
+
+@media(max-width:700px){
+  body { padding-bottom: 76px; }
+}
+/* ===== STICKY CTA（スクロール追従予約ボタン）===== */
+.sticky-cta {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+  display: flex; gap: 10px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: rgba(255,251,240,0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+  transform: translateY(120%);
+  transition: transform 0.35s cubic-bezier(.22,1,.36,1);
+}
+.sticky-cta.show { transform: translateY(0); }
+.sticky-cta a {
+  flex: 1; text-align: center; text-decoration: none;
+  padding: 14px 8px; border-radius: 99px;
+  font-family: 'Fredoka One', cursive; font-size: 15px; letter-spacing: 0.05em;
+}
+.sticky-cta .sc-book {
+  background: linear-gradient(135deg, var(--orange), var(--pink)); color: #fff;
+  box-shadow: 0 4px 14px rgba(255,107,53,0.35);
+}
+.sticky-cta .sc-line {
+  background: #06c755; color: #fff; flex: 0 0 auto; min-width: 120px;
+  box-shadow: 0 4px 14px rgba(6,199,85,0.3);
+}
+@media(min-width:701px){ .sticky-cta a { font-size: 16px; } }
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-badge">🐾 ペット専門フォトスタジオ &nbsp;大阪・浪速区</div>
+  <h1 class="hero-logo">Sniff <span>&</span> Snap</h1>
+  <p class="hero-sub">PHOTO STUDIO</p>
+  <p class="hero-tagline">「今この瞬間」を、ずっと残したい一枚に。<br>大切な家族との、特別な時間を。</p>
+  <div class="hero-points">
+    <span>🐾 犬・猫・うさぎ・小動物もOK</span>
+    <span>📸 自然な表情を引き出す撮影</span>
+    <span>💛 体調不良キャンセル3日前まで無料</span>
+  </div>
+  <div class="hero-photos">
+    <img class="hero-photo" src="/images/img_01.jpg" alt="ペット撮影例">
+    <img class="hero-photo" src="/images/img_02.jpg" alt="ペット撮影例">
+    <img class="hero-photo" src="/images/img_03.jpg" alt="ペット撮影例">
+  </div>
+  <a href="https://script.google.com/macros/s/AKfycbxtuIQ-u97SK3iwHVrMAycxJ5La1f1XFop03H-d_imrs-f7HPdNpw5dsSEbK1KgDV5cUw/exec" class="hero-cta">📅 撮影を予約する</a>
+  <p class="hero-cta-note">2026年7月までの予約を受付中・空き枠わずか</p>
+  <div class="hero-scroll"><div class="hero-scroll-dot"></div><span>SCROLL</span></div>
+</section>
+
+<!-- 社会的証明バー -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <span class="proof-item">📸 犬・猫・うさぎ・小動物まで対応</span>
+    <span class="proof-divider"></span>
+    <span class="proof-item">🗓️ ありがたいことに連日ご予約をいただいています</span>
+    <span class="proof-divider"></span>
+    <span class="proof-item">💛 体調・ご機嫌に合わせて丁寧に撮影</span>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-pink">Gallery</span>
+      <h2 class="section-title">作品ギャラリー</h2>
+      <p class="section-lead">おもちゃ持ち込み・衣装・バースデーフォトなど、<br>その子だけの特別な一枚を一緒に作ります。</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="/images/gallery/g00.jpg" alt="Sniff Snap 作品 1" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g01.jpg" alt="Sniff Snap 作品 2" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g02.jpg" alt="Sniff Snap 作品 3" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g03.jpg" alt="Sniff Snap 作品 4" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g04.jpg" alt="Sniff Snap 作品 5" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g05.jpg" alt="Sniff Snap 作品 6" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g06.jpg" alt="Sniff Snap 作品 7" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g07.jpg" alt="Sniff Snap 作品 8" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g08.jpg" alt="Sniff Snap 作品 9" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g09.jpg" alt="Sniff Snap 作品 10" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g10.jpg" alt="Sniff Snap 作品 11" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g11.jpg" alt="Sniff Snap 作品 12" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g12.jpg" alt="Sniff Snap 作品 13" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g13.jpg" alt="Sniff Snap 作品 14" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g14.jpg" alt="Sniff Snap 作品 15" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g15.jpg" alt="Sniff Snap 作品 16" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g16.jpg" alt="Sniff Snap 作品 17" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g17.jpg" alt="Sniff Snap 作品 18" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g18.jpg" alt="Sniff Snap 作品 19" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g19.jpg" alt="Sniff Snap 作品 20" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g20.jpg" alt="Sniff Snap 作品 21" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g21.jpg" alt="Sniff Snap 作品 22" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g22.jpg" alt="Sniff Snap 作品 23" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g23.jpg" alt="Sniff Snap 作品 24" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g24.jpg" alt="Sniff Snap 作品 25" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g25.jpg" alt="Sniff Snap 作品 26" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g26.jpg" alt="Sniff Snap 作品 27" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g27.jpg" alt="Sniff Snap 作品 28" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g28.jpg" alt="Sniff Snap 作品 29" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g29.jpg" alt="Sniff Snap 作品 30" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g30.jpg" alt="Sniff Snap 作品 31" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g31.jpg" alt="Sniff Snap 作品 32" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g32.jpg" alt="Sniff Snap 作品 33" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g33.jpg" alt="Sniff Snap 作品 34" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g34.jpg" alt="Sniff Snap 作品 35" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g35.jpg" alt="Sniff Snap 作品 36" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g36.jpg" alt="Sniff Snap 作品 37" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g37.jpg" alt="Sniff Snap 作品 38" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g38.jpg" alt="Sniff Snap 作品 39" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g39.jpg" alt="Sniff Snap 作品 40" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g40.jpg" alt="Sniff Snap 作品 41" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g41.jpg" alt="Sniff Snap 作品 42" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g42.jpg" alt="Sniff Snap 作品 43" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g43.jpg" alt="Sniff Snap 作品 44" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="/images/gallery/g44.jpg" alt="Sniff Snap 作品 45" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="plan">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-orange">Pricing</span>
+      <h2 class="section-title">料金プラン</h2>
+      <p class="section-lead">ご希望に合わせて3つのプランからお選びいただけます。<br>初めての方には<strong style="color:#c47a5a;">1番人気のプレミアム</strong>がおすすめです。<br><span style="font-size:13px;color:#999;">表示は平日価格です。土日祝は+¥3,000の特別料金となります。</span></p>
+    </div>
+    <div class="plan-cards-grid">
+      <!-- ライト -->
+      <div class="plan-card reveal">
+        <span class="weekday-only">平日限定</span>
+        <div class="plan-name">ライト</div>
+        <div class="plan-chips">
+          <span class="plan-chip">ふれあい15分</span>
+          <span class="plan-chip">撮影30分</span>
+          <span class="plan-chip">10カット</span>
+          <span class="plan-chip">メニュー2種</span>
+        </div>
+        <hr class="plan-divider">
+        <ul class="plan-features-list">
+          <li>ふれあいタイム15分つき</li>
+          <li>メニューから2種類選択</li>
+          <li>納品データ 10カット</li>
+          <li>まずは試したい方に</li>
+        </ul>
+        <div class="price-label">平日価格</div>
+        <div class="plan-price"><span class="yen">¥</span>20000</div>
+        <div class="plan-tax">(+TAX)</div>
+        <div class="plan-unit">1枚あたり <strong>¥2000</strong></div>
+        <div class="plan-weekend">※土日祝はお選びいただけません</div>
+      </div>
+      <!-- プレミアム（1番人気・最もお得） -->
+      <div class="plan-card featured reveal">
+        <div class="plan-badge">⭐ 1番人気・最もお得</div>
+        <div class="plan-name">プレミアム</div>
+        <div class="plan-chips">
+          <span class="plan-chip">ふれあい15分</span>
+          <span class="plan-chip">撮影60分</span>
+          <span class="plan-chip">20カット</span>
+          <span class="plan-chip">メニュー4種</span>
+        </div>
+        <hr class="plan-divider">
+        <ul class="plan-features-list">
+          <li>ふれあいタイム15分つき</li>
+          <li>全メニューから4種類選択</li>
+          <li>納品データ 20カット</li>
+          <li class="plan-highlight">有料メニュー全6種が無料！</li>
+          <li class="plan-highlight">メイキングムービーが無料</li>
+          <li class="plan-highlight">オリジナルLINEスタンプをプレゼント</li>
+        </ul>
+        <div class="plan-save">合計 ¥14000 相当おトク</div>
+        <div class="price-label">平日価格</div>
+        <div class="plan-price"><span class="yen">¥</span>30000</div>
+        <div class="plan-tax">(+TAX)</div>
+        <div class="plan-unit featured-unit">1枚あたり <strong>¥1500</strong><span class="unit-best">最安</span></div>
+        <div class="plan-weekend">土日祝は <strong>¥33000</strong>（+¥3000）</div>
+      </div>
+      <!-- スタンダード -->
+      <div class="plan-card reveal">
+        <div class="plan-name">スタンダード</div>
+        <div class="plan-chips">
+          <span class="plan-chip">ふれあい15分</span>
+          <span class="plan-chip">撮影45分</span>
+          <span class="plan-chip">15カット</span>
+          <span class="plan-chip">メニュー3種</span>
+        </div>
+        <hr class="plan-divider">
+        <ul class="plan-features-list">
+          <li>ふれあいタイム15分つき</li>
+          <li>メニューから3種類選択</li>
+          <li>納品データ 15カット</li>
+          <li>バランス重視の方に</li>
+        </ul>
+        <div class="price-label">平日価格</div>
+        <div class="plan-price"><span class="yen">¥</span>25000</div>
+        <div class="plan-tax">(+TAX)</div>
+        <div class="plan-unit">1枚あたり <strong>¥1667</strong></div>
+        <div class="plan-weekend">土日祝は <strong>¥28000</strong>（+¥3000）</div>
+      </div>
+    </div>
+
+    <!-- バースデー（特別プラン・別枠） -->
+    <div class="special-plan reveal">
+      <div class="special-badge">🎂 特別プラン</div>
+      <div class="special-inner">
+        <div class="special-left">
+          <div class="special-name">バースデーフォト</div>
+          <p class="special-desc">お誕生日や記念日に。専用のバースデーブースで、その子だけの特別な一枚を。メイキングムービーと、その子のオリジナルLINEスタンプも無料でプレゼントします。</p>
+          <div class="special-chips">
+            <span class="plan-chip">ふれあい15分</span>
+            <span class="plan-chip">撮影60分</span>
+            <span class="plan-chip">20カット</span>
+            <span class="plan-chip">専用ブース</span>
+            <span class="plan-chip">メニュー3種</span>
+            <span class="plan-chip">ムービー・スタンプ無料</span>
+          </div>
+        </div>
+        <div class="special-right">
+          <div class="price-label">平日価格</div>
+          <div class="plan-price"><span class="yen">¥</span>35000</div>
+          <div class="plan-tax">(+TAX)</div>
+          <div class="plan-unit">1枚あたり <strong>¥1750</strong></div>
+          <div class="special-weekend">土日祝は <strong>¥38000</strong>（+¥3000）</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 追加オプション -->
+    <div class="reveal" style="margin-top:48px;">
+      <h3 style="font-family:'Fredoka One',cursive;font-size:20px;color:#3a3a3a;margin-bottom:4px;">OPTION</h3>
+      <p style="font-size:13px;color:#aaa;margin-bottom:0;">オプション</p>
+    </div>
+    <div class="option-grid reveal" style="margin-top:20px;">
+      <div class="option-card">
+        <div class="option-card-title">🎬 メイキングムービー</div>
+        <div class="option-card-items">
+          <strong>¥3000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          <span style="font-size:12px;color:var(--orange);font-weight:700;">プレミアム・バースデーは無料</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">💬 オリジナルLINEスタンプ</div>
+        <div class="option-card-items">
+          <strong>¥3000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          <span style="font-size:12px;color:var(--orange);font-weight:700;">プレミアム・バースデーは無料</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">🎁 ムービー＋スタンプ セット</div>
+        <div class="option-card-items">
+          <strong>¥5000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          <span style="font-size:12px;color:var(--orange);font-weight:700;">¥1000おトク</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">📸 納品データ追加</div>
+        <div class="option-card-items">
+          1枚&nbsp;&nbsp;<strong>¥2000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          5枚&nbsp;&nbsp;<strong>¥8000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          10枚&nbsp;<strong>¥15000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span><br>
+          <span style="font-size:12px;color:var(--orange);font-weight:700;">10枚以上はご相談ください</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">🐕 キャンセル</div>
+        <div class="option-card-items">
+          3日前まで&nbsp;&nbsp;<strong style="font-size:22px;letter-spacing:0.05em;">FREE</strong><br>
+          <span style="font-size:12px;color:#aaa;">体調を崩しやすい子も安心！</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">📅 土日祝料金</div>
+        <div class="option-card-items">
+          <strong>¥3000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-card-title">🐾 ワンちゃん追加</div>
+        <div class="option-card-items">
+          1頭&nbsp;&nbsp;<strong>¥2000</strong> <span style="font-size:12px;color:#aaa;">(+TAX)</span>
+        </div>
+      </div>
+    </div>
+    <!-- 基本情報注記 -->
+    <div class="reveal" style="margin-top:24px;padding:20px;background:rgba(0,0,0,0.03);border-radius:16px;border:1px solid rgba(0,0,0,0.06);">
+      <p style="font-size:12px;color:rgba(0,0,0,0.4);line-height:2.2;">
+        ・撮影メニューはプランに応じて2〜4種類お選びいただきます&nbsp;&nbsp;・基本料金は事前振込制です<br>
+        ・オプション料金は当日お振込みとなります<br>
+        ・ご入金確認後7日以内にデータをお送りします（ギガファイル便／Googleドライブにて送付）<br>
+        ・場所：大阪府大阪市浪速区（詳細住所はご予約確定後にご案内）
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 安心の約束（保証・リスクリバーサル） -->
+<section class="promise">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-blue">Our Promise</span>
+      <h2 class="section-title">はじめてでも、安心してください</h2>
+      <p class="section-lead">「うちの子、じっとできないけど大丈夫…？」<br>そんなご不安こそ、私たちにおまかせください。</p>
+    </div>
+    <div class="promise-grid reveal">
+      <div class="promise-card">
+        <div class="promise-icon">🐾</div>
+        <h3 class="promise-title">動き回る子こそ、得意です</h3>
+        <p class="promise-text">撮影はまず「ふれあい時間」から。ケージから出てすぐにカメラを向けることはしません。その子が場所に慣れ、リラックスした瞬間を待って、自然な表情をすくい取ります。じっとできない子も、走り回る子も、その姿そのものが愛おしい一枚になります。</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-icon">💛</div>
+        <h3 class="promise-title">その子のペースが、最優先</h3>
+        <p class="promise-text">時間内に「撮り切る」ことより、その子が心地よくいられることを大切にしています。緊張がほぐれない時は休憩をはさみ、ご機嫌に合わせて進めます。飼い主さまにも横についていただけるので、おうちと同じ安心感の中で撮影できます。</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-icon">🗓️</div>
+        <h3 class="promise-title">体調がすぐれない日は、無料で変更</h3>
+        <p class="promise-text">小さな子・繊細な子は、当日に体調を崩すこともあります。3日前までのキャンセル・日程変更は無料です。「無理に連れていかなきゃ」と気負わず、その子のコンディションが良い日に、安心してお越しください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-teal">Menu</span>
+      <h2 class="section-title">撮影メニュー</h2>
+      <p style="color:rgba(0,0,0,0.4);font-size:14px;margin-top:8px;">プランに応じて2〜4種類をお選びいただきます（プレミアムは全メニュー無料）</p>
+    </div>
+    <div class="menu-cards-grid">
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_18.jpg" alt="PORTRAIT ポートレート" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">PORTRAIT</div>
+          <div class="menu-card-ja">ポートレート</div>
+          <div class="menu-card-price free">FREE</div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_19.jpg" alt="HALF FACE ハーフフェイス" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">HALF FACE</div>
+          <div class="menu-card-ja">ハーフフェイス</div>
+          <div class="menu-card-price free">FREE</div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_20.jpg" alt="PARTS パーツ" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">PARTS</div>
+          <div class="menu-card-ja">パーツ</div>
+          <div class="menu-card-price free">FREE</div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_21.jpg" alt="FAMILY SHOT 家族写真" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">FAMILY SHOT</div>
+          <div class="menu-card-ja">家族写真</div>
+          <div class="menu-card-price free">FREE</div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_22.jpg" alt="PAPER SNAP 顔出しショット" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">PAPER SNAP</div>
+          <div class="menu-card-ja">顔出しショット</div>
+          <div class="menu-card-price">¥2000<span style="font-size:11px;color:#aaa;"> (+TAX)</span></div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_23.jpg" alt="BALLON SHOT ふわふわ風船ショット" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">BALLON SHOT</div>
+          <div class="menu-card-ja">ふわふわ風船ショット</div>
+          <div class="menu-card-price">¥3000<span style="font-size:11px;color:#aaa;"> (+TAX)</span></div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_24.jpg" alt="TOYS おもちゃ遊び" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">TOYS</div>
+          <div class="menu-card-ja">おもちゃ遊び</div>
+          <div class="menu-card-price">¥1000<span style="font-size:11px;color:#aaa;"> (+TAX)</span></div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_25.jpg" alt="HAT ぼうし" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">HAT</div>
+          <div class="menu-card-ja">ぼうし</div>
+          <div class="menu-card-price">¥1000<span style="font-size:11px;color:#aaa;"> (+TAX)</span></div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <img class="menu-card-img" src="/images/img_26.jpg" alt="EYE WEAR メガネ" loading="lazy">
+        <div class="menu-card-body">
+          <div class="menu-card-en">EYE WEAR</div>
+          <div class="menu-card-ja">メガネ</div>
+          <div class="menu-card-price">¥1000<span style="font-size:11px;color:#aaa;"> (+TAX)</span></div>
+          <div class="menu-card-badge">オプション料金</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-teal">How it works</span>
+      <h2 class="section-title">撮影の流れ</h2>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step reveal">
+        <div class="flow-num-wrap">01</div>
+        <div class="flow-content">
+          <h3>ご予約</h3>
+          <p><a href="https://script.google.com/macros/s/AKfycbxtuIQ-u97SK3iwHVrMAycxJ5La1f1XFop03H-d_imrs-f7HPdNpw5dsSEbK1KgDV5cUw/exec" style="color:var(--teal);font-weight:bold;">予約ページ</a>より、ご希望の日時をお選びください。予約完了後、公式LINEへ【予約完了】とメッセージをお送りください。</p>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num-wrap">02</div>
+        <div class="flow-content">
+          <h3>お支払い</h3>
+          <p>ご予約確定後、事前振り込みにてお支払いをお願いいたします。当日のオプション追加分は当日にご対応いただけます。</p>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num-wrap">03</div>
+        <div class="flow-content">
+          <h3>ご来店・ふれあいタイム15分</h3>
+          <p>ご予約時間の10分前にスタジオへお越しください。まずは全プラン共通の「ふれあいタイム15分」から。ケージから出してすぐに撮るのではなく、その子が新しい場所に慣れる時間を大切にします。いつものおやつをお持ちください！</p>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num-wrap">04</div>
+        <div class="flow-content">
+          <h3>撮影</h3>
+          <p>リラックスした雰囲気の中で、その子らしい自然な表情を撮影します。撮影時間はプランに応じて30〜60分。衣装替えや小物で、特別な一枚を一緒に作ります。</p>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num-wrap">05</div>
+        <div class="flow-content">
+          <h3>データ納品</h3>
+          <p>ご入金確認後7日以内に、ギガファイル便またはGoogleドライブにてお届けします。プレミアム・バースデーはメイキングムービーと、その子のオリジナルLINEスタンプも一緒にプレゼントします。</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-alert reveal">
+      🍪 <strong>ご来店時のお願い：</strong>いつも食べているおやつをご持参ください。マナーパンツ着用必須。お洋服・おもちゃ持ち込みOK！飼い主さまの目線誘導のご協力をお願いします。
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="voice">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-purple">Reviews</span>
+      <h2 class="section-title">お客様の声</h2>
+      <p class="section-lead">ありがたいことに、連日たくさんのご家族にお越しいただいています。<br>はじめての方も、リピーターの方も。みなさまの声を一部ご紹介します。</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <div class="voice-quote">"</div>
+        <p class="voice-text">カメラが苦手なうちの子なのに、リラックスして自然な顔で撮ってもらえました。こんなに可愛い表情があったんだと感動。一生の宝物になりました。</p>
+        <div class="voice-meta">
+          <div class="voice-icon v1">🐶</div>
+          <div>
+            <div class="voice-name">トイプードル・5歳 / 30代女性</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <div class="voice-quote">"</div>
+        <p class="voice-text">猫を連れての撮影が不安でしたが、とても丁寧に対応していただき安心しました。写真のクオリティも想像以上で、すぐに飾りました！</p>
+        <div class="voice-meta">
+          <div class="voice-icon v2">🐱</div>
+          <div>
+            <div class="voice-name">スコティッシュ・2歳 / 20代女性</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <div class="voice-quote">"</div>
+        <p class="voice-text">バースデーフォトで利用しました。おもちゃやお洋服を持ち込んで、とても特別な一枚が撮れました。毎年お願いしたいです！</p>
+        <div class="voice-meta">
+          <div class="voice-icon v3">🐕</div>
+          <div>
+            <div class="voice-name">柴犬・1歳 / 40代女性</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <div class="voice-quote">"</div>
+        <p class="voice-text">うさぎの撮影を断られることが多い中、快く対応いただけました。緊張していた子もすぐにリラックスして、可愛い写真がたくさん撮れました。</p>
+        <div class="voice-meta">
+          <div class="voice-icon v4">🐰</div>
+          <div>
+            <div class="voice-name">ミニうさぎ・3歳 / 30代女性</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" style="background:linear-gradient(180deg,#fff 0%,#fff8f0 100%);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="chip chip-blue">FAQ</span>
+      <h2 class="section-title">よくあるご質問</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>うちの子はじっとしていられないのですが、撮影できますか？</summary>
+        <p>はい、ご安心ください。撮影は「ふれあい時間」からスタートし、その子のペースに合わせて自然な表情を引き出します。動き回る様子も、その子らしい可愛い一枚になります。</p>
+      </details>
+      <details class="faq-item">
+        <summary>犬・猫以外（うさぎ・小動物など）も撮影できますか？</summary>
+        <p>もちろん可能です。うさぎ・フェレットなどの小動物も歓迎しております。他店で断られた方も、まずはお気軽にご相談ください。</p>
+      </details>
+      <details class="faq-item">
+        <summary>当日、急に体調を崩してしまったら？</summary>
+        <p>3日前までのキャンセルは無料です。体調を崩しやすい子も安心してご予約いただけます。前日・当日のキャンセルについてはキャンセルポリシーをご確認ください。</p>
+      </details>
+      <details class="faq-item">
+        <summary>衣装やおもちゃは持ち込めますか？</summary>
+        <p>はい、お洋服・おもちゃの持ち込みは大歓迎です。その子だけの特別な一枚を一緒に作りましょう。スタジオにも各種小物をご用意しています。</p>
+      </details>
+      <details class="faq-item">
+        <summary>写真はいつ受け取れますか？</summary>
+        <p>ご入金確認後7日以内に、ギガファイル便またはGoogleドライブにてデータをお届けします。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="section-inner">
+    <div class="reveal" style="margin-bottom:8px;">
+      <span class="chip chip-orange">Reservation</span>
+      <h2 class="section-title">撮影を予約する</h2>
+    </div>
+    <!-- Booking CTA -->
+    <div class="reveal" style="text-align:center;padding:60px 0;">
+      <p style="color:rgba(255,255,255,0.8);font-size:16px;line-height:2;margin-bottom:32px;">ご希望の撮影日・プランを選んで、かんたんに予約できます。<br>予約後は公式LINEに【予約完了】とメッセージをお送りください。</p>
+      <a href="https://script.google.com/macros/s/AKfycbxtuIQ-u97SK3iwHVrMAycxJ5La1f1XFop03H-d_imrs-f7HPdNpw5dsSEbK1KgDV5cUw/exec" style="display:inline-block;padding:20px 64px;background:var(--yellow);color:var(--dark);font-family:'Fredoka One',cursive;font-size:20px;letter-spacing:0.1em;border-radius:99px;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,0.15);transition:all 0.2s;">📅 予約ページへ進む</a>
+      <p style="color:rgba(255,255,255,0.5);font-size:12px;margin-top:16px;">📩 ご予約後、<strong style="color:#ff6b35;">公式LINEに【予約完了】</strong>とメッセージをお送りください。</p>
+    </div>
+    <!-- Cancel -->
+    <div class="reveal" style="margin-top:16px;">
+      <p class="cancel-title">Cancellation Policy</p>
+      <div class="cancel-block">
+        <div class="cancel-item">
+          <div class="cancel-timing">2日前まで</div>
+          <div class="cancel-fee free">無料</div>
+        </div>
+        <div class="cancel-item">
+          <div class="cancel-timing">前日</div>
+          <div class="cancel-fee half">50%</div>
+        </div>
+        <div class="cancel-item">
+          <div class="cancel-timing">当日</div>
+          <div class="cancel-fee full">100%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="sc-book" href="https://script.google.com/macros/s/AKfycbxtuIQ-u97SK3iwHVrMAycxJ5La1f1XFop03H-d_imrs-f7HPdNpw5dsSEbK1KgDV5cUw/exec">📅 撮影を予約する</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Sniff <span>&</span> Snap</div>
+  <div class="footer-info">
+    PHOTO STUDIO — Osaka Naniwa<br>
+    <a href="tel:09087994021" style="color:rgba(255,255,255,0.5);text-decoration:none;">090-8799-4021</a>　｜　<a href="mailto:info@0love-inc.com" style="color:rgba(255,255,255,0.5);text-decoration:none;">info@0love-inc.com</a><br>
+    予約受付：2026年3月〜7月
+  </div>
+  <div class="footer-copy">© 2026 Sniff Snap Photo Studio. All rights reserved.</div>
+</footer>
+
+<script>
+const AVAILABLE_SLOTS = {
+  "2026-03-25": ["12:00", "13:00", "14:00"],
+  "2026-03-26": ["12:00", "13:00"],
+  "2026-03-28": ["12:00", "13:00", "14:00"],
+  "2026-03-29": ["12:00", "14:00"],
+  "2026-04-04": ["12:00", "13:00", "14:00"],
+  "2026-04-05": ["12:00", "13:00", "14:00"],
+  "2026-04-11": ["12:00", "13:00", "14:00"],
+  "2026-04-12": ["12:00", "13:00"],
+  "2026-04-18": ["12:00", "13:00", "14:00"],
+  "2026-04-19": ["12:00", "14:00"],
+  "2026-04-25": ["12:00", "13:00", "14:00"],
+  "2026-04-26": ["12:00", "13:00", "14:00"],
+  "2026-05-03": ["12:00", "13:00", "14:00"],
+  "2026-05-04": ["12:00", "13:00"],
+  "2026-05-10": ["12:00", "13:00", "14:00"],
+  "2026-05-17": ["12:00", "13:00", "14:00"],
+  "2026-05-23": ["12:00", "13:00", "14:00"],
+  "2026-05-24": ["12:00", "14:00"],
+  "2026-06-06": ["12:00", "13:00", "14:00"],
+  "2026-06-07": ["12:00", "13:00"],
+  "2026-06-13": ["12:00", "13:00", "14:00"],
+  "2026-06-14": ["12:00", "13:00", "14:00"],
+  "2026-06-20": ["12:00", "13:00", "14:00"],
+  "2026-06-27": ["12:00", "14:00"],
+  "2026-07-04": ["12:00", "13:00", "14:00"],
+  "2026-07-05": ["12:00", "13:00"],
+  "2026-07-11": ["12:00", "13:00", "14:00"],
+  "2026-07-12": ["12:00", "13:00", "14:00"],
+  "2026-07-18": ["12:00", "13:00", "14:00"],
+  "2026-07-19": ["12:00", "14:00"],
+  "2026-07-25": ["12:00", "13:00", "14:00"],
+  "2026-07-26": ["12:00", "13:00"],
+};
+const FULL_SLOTS = {};
+const FORMSPREE_URL = null; // mailto fallback
+
+const DOW = ["日","月","火","水","木","金","土"];
+let currentYear, currentMonth, selectedDate=null, selectedTime=null;
+function pad(n){return String(n).padStart(2,'0');}
+function dateKey(y,m,d){return `${y}-${pad(m)}-${pad(d)}`;}
+
+function initCalendar(){
+  if(!document.getElementById('calGrid')) return; // フォーム未設置時はスキップ
+  const now=new Date(); currentYear=now.getFullYear(); currentMonth=now.getMonth()+1; renderCalendar();
+}
+function renderCalendar(){
+  document.getElementById('calMonth').textContent=`${currentYear}年${currentMonth}月`;
+  const grid=document.getElementById('calGrid'); grid.innerHTML='';
+  DOW.forEach(d=>{const el=document.createElement('div');el.className='cal-dow';el.textContent=d;grid.appendChild(el);});
+  const firstDay=new Date(currentYear,currentMonth-1,1).getDay();
+  const daysInMonth=new Date(currentYear,currentMonth,0).getDate();
+  const today=new Date(); today.setHours(0,0,0,0);
+  for(let i=0;i<firstDay;i++){const el=document.createElement('div');el.className='cal-day empty';grid.appendChild(el);}
+  for(let d=1;d<=daysInMonth;d++){
+    const el=document.createElement('div'); el.className='cal-day'; el.textContent=d;
+    const key=dateKey(currentYear,currentMonth,d);
+    const dayDate=new Date(currentYear,currentMonth-1,d);
+    if(dayDate<today){el.classList.add('past');}
+    else if(AVAILABLE_SLOTS[key]){
+      el.classList.add('available');
+      if(key===selectedDate)el.classList.add('selected');
+      el.addEventListener('click',()=>selectDate(key,el));
+    }
+    grid.appendChild(el);
+  }
+}
+function selectDate(key,el){
+  document.querySelectorAll('.cal-day.selected').forEach(e=>e.classList.remove('selected'));
+  el.classList.add('selected'); selectedDate=key; selectedTime=null;
+  renderTimeSlots(key); updateSummary(); checkSubmit();
+}
+function renderTimeSlots(key){
+  const box=document.getElementById('timeBox');
+  const container=document.getElementById('timeSlots');
+  box.classList.add('show'); container.innerHTML='';
+  const slots=AVAILABLE_SLOTS[key]||[];
+  const fullSlots=FULL_SLOTS[key]||[];
+  slots.forEach(t=>{
+    const btn=document.createElement('div'); btn.className='time-slot'; btn.textContent=t;
+    if(fullSlots.includes(t)){btn.classList.add('full');}
+    else{btn.addEventListener('click',()=>{
+      document.querySelectorAll('.time-slot.selected').forEach(e=>e.classList.remove('selected'));
+      btn.classList.add('selected'); selectedTime=t; updateSummary(); checkSubmit();
+    });}
+    container.appendChild(btn);
+  });
+}
+function updateSummary(){
+  const el=document.getElementById('selectedSummary');
+  if(selectedDate&&selectedTime){
+    const [y,m,d]=selectedDate.split('-');
+    const dow=["日","月","火","水","木","金","土"][new Date(+y,+m-1,+d).getDay()];
+    el.innerHTML=`📅 <strong style="color:var(--yellow)">${y}年${m}月${d}日（${dow}）${selectedTime}〜</strong> でご予約を進めます`;
+    el.classList.add('show');
+  }else{el.classList.remove('show');}
+}
+function checkSubmit(){
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const tel=document.getElementById('f-tel').value.trim();
+  const pet=document.getElementById('f-pet').value;
+  const menu=document.getElementById('f-menu').value;
+  const agree=document.getElementById('f-agree').checked;
+  document.getElementById('submitBtn').disabled=!(selectedDate&&selectedTime&&name&&email&&tel&&pet&&menu&&agree);
+}
+if(document.getElementById('prevMonth')){
+document.getElementById('prevMonth').addEventListener('click',()=>{
+  currentMonth--; if(currentMonth<1){currentMonth=12;currentYear--;} renderCalendar();
+});
+document.getElementById('nextMonth').addEventListener('click',()=>{
+  currentMonth++; if(currentMonth>12){currentMonth=1;currentYear++;} renderCalendar();
+});
+['f-name','f-email','f-tel','f-pet','f-menu','f-agree'].forEach(id=>{
+  document.getElementById(id).addEventListener('change',checkSubmit);
+  document.getElementById(id).addEventListener('input',checkSubmit);
+});
+document.getElementById('submitBtn').addEventListener('click',function(){
+  const [y,m,d]=selectedDate.split('-');
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const tel=document.getElementById('f-tel').value.trim();
+  const pet=document.getElementById('f-pet').value;
+  const petname=document.getElementById('f-petname').value.trim();
+  const menu=document.getElementById('f-menu').value;
+  const color=document.getElementById('f-color').value.trim();
+  const note=document.getElementById('f-note').value.trim();
+  const subject=encodeURIComponent('【Sniff Snap】撮影予約申込：'+y+'年'+m+'月'+d+'日 '+selectedTime+'〜');
+  const body=encodeURIComponent(
+    '【撮影予約申込】\n\n'
+    +'希望日時：'+y+'年'+m+'月'+d+'日 '+selectedTime+'〜\n'
+    +'お名前：'+name+'\n'
+    +'メール：'+email+'\n'
+    +'電話番号：'+tel+'\n'
+    +'ペットの種類：'+pet+'\n'
+    +'ペットの名前・年齢：'+petname+'\n'
+    +'撮影プラン：'+menu+'\n'
+    +'ご希望の背景紙カラー：'+(color||'未記入')+'\n'
+    +'ご要望・ご質問：'+note+'\n'
+  );
+  window.location.href='mailto:info@0love-inc.com?subject='+subject+'&body='+body;
+  setTimeout(function(){
+    document.getElementById('formInner').style.display='none';
+    document.getElementById('formSuccess').classList.add('show');
+  },1000);
+});
+} // end form guard
+// Reveal animation with fallback
+function initReveal() {
+  const reveals = document.querySelectorAll('.reveal');
+  if (!reveals.length) return;
+  
+  if ('IntersectionObserver' in window) {
+    // Add animate class to hide initially
+    reveals.forEach(el => el.classList.add('animate'));
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  }
+  // If IntersectionObserver not supported, elements remain visible (no animate class)
+  
+  // Safety fallback: show all after 3 seconds
+  setTimeout(() => {
+    reveals.forEach(el => el.classList.add('visible'));
+  }, 3000);
+}
+// ===== Sticky CTA 表示制御 =====
+(function(){
+  const cta = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  const booking = document.getElementById('booking');
+  if(!cta) return;
+  function onScroll(){
+    const y = window.scrollY || window.pageYOffset;
+    const heroH = hero ? hero.offsetHeight : 400;
+    // 予約セクションが画面に入っているか
+    let inBooking = false;
+    if(booking){
+      const r = booking.getBoundingClientRect();
+      inBooking = r.top < window.innerHeight && r.bottom > 0;
+    }
+    if(y > heroH * 0.6 && !inBooking){ cta.classList.add('show'); }
+    else { cta.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+// DOMContentLoaded後に実行
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    initReveal();
+    initCalendar();
+  });
+} else {
+  initReveal();
+  initCalendar();
+}
+</script>
+</body>
+</html>
